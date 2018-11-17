@@ -22,16 +22,10 @@ def build(bld):
                 raise TypeError('Wrong part')
         return ' '.join(os.path.join('text', s) for s in sources)
     sources = make_sources([
-        'Introduction',
-        ('Basics', [
-            'Chapters',
-            'Special',
-            'Markdown',
-            'Maths',
-        ]),
-        ('Floats', [
-            'Listings',
-            'Refs',
+        'Task',
+        ('Progress', [
+            'Preparations',
+            'Report',
         ]),
         'Conclusion',
     ])
